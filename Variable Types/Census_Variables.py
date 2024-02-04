@@ -16,7 +16,7 @@ print(census.dtypes)
 print(census['birth_year'].unique())
 
 #replace the identified missing value
-census['birth_year'] = census['birth_year'].replace('missing', '1967')
+census['birth_year'] = census['birth_year'].replace(['missing'], '1967')
 print(census['birth_year'].unique())
 
 #datatype conversion
