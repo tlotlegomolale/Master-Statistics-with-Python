@@ -1,10 +1,16 @@
 import scipy.stats as stats
 
 ## Checkpoint 1
-temp_prob_1 = stats.norm.cdf(25, 20, 3) - stats.norm.cdf(18, 20, 3)
-print(temp_prob_1)
+# calculate prob_15
+prob_15 = stats.poisson.pmf(15, 15)
+
+# print prob_15
+print(prob_15)
 
 
-## Checkpoint 2
-temp_prob_2 = 1 - stats.norm.cdf(24, 20, 3)
-print(temp_prob_2)
+## Checkpoint 
+# calculate prob_7_to_9
+prob_7_to_9 = stats.poisson.pmf(7, 15) + stats.poisson.pmf(8, 15) + stats.poisson.pmf(9, 15)
+
+# print prob_7_to_9
+print(prob_7_to_9)
