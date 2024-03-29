@@ -7,7 +7,7 @@ import statsmodels.api as sm
 # Read in the data
 students = pd.read_csv('test_data.csv')
 
-# Create the model here:
+# Create the model here :
 model = sm.OLS.from_formula('score ~ hours_studied', data = students)
 
 # Fit the model here:
